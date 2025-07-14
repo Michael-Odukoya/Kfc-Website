@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Carattere&family=Julius+Sans+One&family=Quicksand:wght@300..700&display=swap");
+
+@import "tailwindcss";
+
+* {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+}
+.custom-circular-gradient {
+  background-image: radial-gradient(circle, #f59f0baf, #df0720);
+}
+.kfc {
+  font-family: Carattere;
+}
+.kfcAnime {
+  animation: contain 2s linear infinite;
+}
+@keyframes contain {
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  0% {
+    transform: translateY(-2px);
+  }
+}
+.kfc-infoAnime{
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showConent 0.5s  linear 1 forwards;
+}
+@keyframes showConent {
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+  }
+}
+
+.card{
+    background: rgba(147, 143, 148, 0.11);
+    backdrop-filter: blur(40px);
+}
+.item:hover{
+  border: 2px white solid;
+  background-color: white;
+  color: #df0720;
+}
+.item2:hover{
+   color: #fc4;
+}
+.item3:hover{
+  background-color: #fff;
+  color: black;
+}
