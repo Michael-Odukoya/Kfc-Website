@@ -13,7 +13,7 @@ const Home3 = () => {
           {MenuData.map((menu, index) => (
             <div
               key={index}
-              className="item3 card max-w-[364px] border shadow-lg rounded px-8 py-6 text-center"
+              className="item3 card max-w-[364px] border shadow-lg rounded px-8 py-6 text-center transition duration-700 ease-in-out "
             >
               <img
                 src={menu.image}
